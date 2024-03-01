@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals Part (c)</title>
+    <style>
+      .result {
+    text-align: center;
+    color: #292729;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: 'circular';
+    
+}
+.sys {
+    text-align: center;
+    margin-bottom: 6rem;
+    background-color: burlywood;
+    font-size: 42px;
+    font-family: sans-serif;
+}
+    </style>
+</head>
+
+<body>
+    <h1>JS Assignment 7(c)</h1>
+
+    <h3 class="sys">Grading System</h3>
+    <script>
+        //Task 1
+
+        /**Run this script, & check whether alert message would be
+    displayed or not. Record the outputs.
+    a. var a = 4;
+    if (++a === 5){
+    alert("given condition for variable a is true");
+    }
+
+    var a =5 ;
+    if(++a === 6){
+        alert("First condition is true");
+    }
+
+    var b =16;
+    if(b++ === 16){
+        alert("Second condition is true");
+
+    } 
+   
+    var c = 13 ;
+    if(c++ === 13){
+        alert("Third condition is true");
+    }
+
+    var d =89;
+    if (++d === 90){
+        alert("Fourth condition is true.");
+
+    }
+
+    var e = 32 ; 
+    if (e++  === 32){
+        alert("Fith condition is also true .");
+    }
+    var f =42;
+    if(++f == 43){
+        alert("Sixth condition is also true .");
+    }
+
+    var camelMilk = 2400;
+    var goatMilk = 2400;
+    var totalCost = camelMilk + goatMilk ;
+    if (totalCost === camelMilk + goatMilk){
+        alert("The cost equals");
+    }**/
+
+
+        //Task2
+
+        /**Write a program to take input the marks obtained in three
+    subjects & total marks. Compute & show the resulting
+    percentage on your page. Take percentage & compute
+    grade as per following table:/**/
+        var x = prompt("Enter your marks");
+        var marks = x;
+        if (marks >= 90) {
+            document.write(`<h1 class="result">Congratulation you got A-one Grade!!`)
+        }
+        else if (marks >= 80) {
+            document.write(`<h1 class="result">Congratulation you got A Grade!!`)
+
+        }
+        else if (marks >= 70) {
+            document.write(`<h1 class="result"> Congratulation you got B Grade!!`)
+        }
+        else if (marks >= 60) {
+            document.write(`<h1 class="result">You got C Grade!!`)
+
+        }
+        else if (marks <= 50) {
+            document.write(`<h1 class="result">You failed`);
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
