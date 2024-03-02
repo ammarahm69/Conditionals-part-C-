@@ -112,10 +112,12 @@
          else if (marks <= 50) {
              document.write(`<h1 class="result">You failed`);
              }*/
+
+             alert('Each subject is of 100 marks');
              
-             var englishMarks = parseInt(prompt("Marks obtained in English"));
-             var mathMarks = parseInt(prompt("Marks obtained in Mathematics"));
-             var soicalMarks = parseInt(prompt("Marks obtained in Social Studies "));
+             var englishMarks = parseInt(prompt("Marks obtained in English out of 100"));
+             var mathMarks = parseInt(prompt("Marks obtained in Mathematics out of 100"));
+             var soicalMarks = parseInt(prompt("Marks obtained in Social Studies out of 100"));
              var finalResult = englishMarks + mathMarks + soicalMarks;
              
              var totalNum = 300;
