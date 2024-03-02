@@ -6,28 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conditionals Part (c)</title>
     <style>
-      .result {
-    text-align: center;
-    color: #292729;
-    font-size: 40px;
-    text-decoration: underline;
-    font-family: 'circular';
-    
+      body {
+    background-color: #292729;
+    color: white;
+    font-family: math;
 }
-.sys {
+        .result {
+            text-align: center;
+            color: #ffffff;
+            font-size: 40px;
+            text-decoration: underline;
+            font-family: 'circular';
+
+        }
+
+        .sys {
     text-align: center;
     margin-bottom: 6rem;
-    background-color: burlywood;
+    background-color: rgb(55 49 109) !important;
     font-size: 42px;
-    font-family: sans-serif;
+    font-family: system-ui;
+    color: cadetblue;
 }
+        .grade{
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <h1>JS Assignment 7(c)</h1>
 
-    <h3 class="sys">Grading System</h3>
+    <h3 class="sys">Mark Sheet.pk</h3>
     <script>
         //Task 1
 
@@ -83,26 +93,60 @@
     subjects & total marks. Compute & show the resulting
     percentage on your page. Take percentage & compute
     grade as per following table:/**/
-        var x = prompt("Enter your marks");
-        var marks = x;
-        if (marks >= 90) {
-            document.write(`<h1 class="result">Congratulation you got A-one Grade!!`)
-        }
-        else if (marks >= 80) {
-            document.write(`<h1 class="result">Congratulation you got A Grade!!`)
+        /** var x = prompt("Enter your marks");
+         var marks = x;
+         if (marks >= 90) {
+             document.write(`<h1 class="result">Congratulation you got A-one Grade!!`)
+         }
+         else if (marks >= 80) {
+             document.write(`<h1 class="result">Congratulation you got A Grade!!`)
+ 
+         }
+         else if (marks >= 70) {
+             document.write(`<h1 class="result"> Congratulation you got B Grade!!`)
+         }
+         else if (marks >= 60) {
+             document.write(`<h1 class="result">You got C Grade!!`)
+ 
+         }
+         else if (marks <= 50) {
+             document.write(`<h1 class="result">You failed`);
+             }*/
+             
+             var englishMarks = parseInt(prompt("Marks obtained in English"));
+             var mathMarks = parseInt(prompt("Marks obtained in Mathematics"));
+             var soicalMarks = parseInt(prompt("Marks obtained in Social Studies "));
+             var finalResult = englishMarks + mathMarks + soicalMarks;
+             
+             var totalNum = 300;
+             document.write(`<h2 class = "grade">Total marks : ${totalNum}` + "<br>");
+             
+             document.write(`<h2 class = "grade">Marks obtained in English : ${englishMarks}` + "<br>");
+                document.write(`<h2 class = "grade">Marks obtained in Mathematics : ${mathMarks}` + "<br>");
+                    document.write(`<h2 class = "grade">Marks obtained in Social Studies: ${soicalMarks}` + "<br>");
+                        
+                        
+        document.write(`<h2 class = "grade">Obtained marks : ${finalResult}` + "<br>");
 
-        }
-        else if (marks >= 70) {
-            document.write(`<h1 class="result"> Congratulation you got B Grade!!`)
-        }
-        else if (marks >= 60) {
-            document.write(`<h1 class="result">You got C Grade!!`)
 
-        }
-        else if (marks <= 50) {
-            document.write(`<h1 class="result">You failed`);
-        }
+        var percentage = Math.round((finalResult / totalNum) * 100);
+        document.write(`<h2 class = "grade">Percentage : ${percentage} %` + "<br>" + "<br>");
 
+        if (percentage >= 80) {
+            document.write("Congratulation you got A grade");
+        }
+        else if (percentage >= 70) {
+            document.write("Congratulation you got A grade");
+        }
+        else if (percentage >= 60) {
+            document.write("You got B grade ");
+        }
+        else if (percentage >= 50) {
+            document.write("You got C grade");
+        }
+        else {
+            document.write("You failed");
+        };
 
 
 
